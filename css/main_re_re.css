@@ -1,0 +1,457 @@
+/* 레이아웃 */
+#wrap{
+    width: 100%;
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 160px;
+}
+#header #header_in{
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+#header_in .logo{
+    float: left;
+}
+#header_in .group{
+    float: right;
+    width: 640px;
+}
+#header_in .group > a{
+    float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+#header_in .q_mn{
+    width: 190px;
+    height: 35px;
+    float: left;
+    margin-right: 20px;
+    /* 아래 세 줄은 양옆, 위아래 간격맞추기 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header_in .q_mn li{
+    float: left;
+    margin-top: -30px;
+}
+#header_in .q_mn li:after{
+    content: '·';
+    font-size: 40px;
+    margin: 0 8px;
+    position: relative;
+    top: 8px;
+    color: #777;
+}
+#header_in .q_mn li:last-child::after{
+    content: '';
+}
+#header_in .q_mn a{
+    font-size: 17px;
+}
+#header_in .q_mn a:hover{
+    color: orange;
+    transition: 0.7s;
+}
+#header_in .input{
+    float: left;
+    width: 260px;
+    height: 35px;
+    margin-top: -4px;
+    background-color: rgb(231, 231, 231);
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+#header_in .input span{
+    font-size: 13px;
+    line-height: 35px;
+    color: #aaa;
+    float: left;
+}
+#header_in .input a{
+    float: right;
+    margin: 6.5px 6px;
+}
+
+#header_in .info_mn{
+    position: absolute;
+    top: 10px;
+    right: -2px;
+}
+#header_in .info_mn li{
+    float: left;
+    padding-right: 3px;
+}
+#header_in .info_mn li:after{
+    content: '｜';
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+    margin: 0 2px;
+
+}
+#header_in .info_mn li:last-child{
+    float: left;
+    padding-right: 0;
+}
+#header_in .info_mn li:last-child::after{
+    content: '';
+}
+#header_in .info_mn a{
+    font-size: 13px;
+}
+#header_in .info_mn a:hover{
+    color: orange;
+    transition: 0.7s;
+}
+#header #nav{
+    width: 100%;
+    height: 50px;
+    background: url(../images/nav_area.jpg) no-repeat 50% 0;
+}
+#header #nav ul{
+    width: 1004px;
+    margin: 0 auto;
+}
+#header #nav li{
+    float: left;
+}
+
+/* main_img */
+#main_img{
+    width: 100%;
+    height: 465px;
+    background: url(../images/main_img.jpg) 50% 0;
+}
+
+/* contents */
+#contents{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#item{
+    width: 1000px;
+    height: 260px;
+    margin: 0 auto;
+}
+#item .item_h{
+    width: 170px;
+    height: 260px;
+    float: left;
+}
+#item .item_h h2{
+    font-size: 31px;
+    line-height: 31px;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border-top: 3px solid #222;
+    border-bottom: 3px solid #222;
+    color: #222;
+}
+#item .item_h h4{
+    margin: 10px 0;
+}
+#item .item_h a{
+    font-size: 16px;
+    font-weight: 900;
+    color: #222;
+}
+#item .item_h a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: 0.7s;
+}
+#item .item_h a:hover::after{
+    content: ' ＞'; 
+}
+#item .item_b{
+    width: 795px;
+    height: 260px;
+    float: right;
+}
+#item .item_b ul{
+    font-size: 0;
+}
+#item .item_b li{
+    display: inline-block;
+    width: 190px;
+    height: 260px;
+    margin-right: 11.6px;
+    box-sizing: border-box; /*중요*/
+    border: 1px solid #ccc;
+}
+#item .item_b li:last-child{
+    margin-right: 0;
+}
+
+#item .item_b li a{
+    display: block;
+    height: 260px;    
+}
+#item .item_b li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+#item .item_b img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+#item .item_b p{
+    font-size: 14px;
+    margin: 12px 0 6px 8px;
+}
+#item .item_b span{
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+#shop{
+    width: 1000px;
+    height: 278px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+#shop ul{
+    font-size: 0;
+}
+#shop li{
+    display: inline-block;
+    margin-right: 18.5px;
+}
+#shop li:last-child{
+    margin-right: 0;
+}
+#shop a{
+}
+
+#movie{
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background: url(../images/con03.png) no-repeat 50% 0;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+#movie a{
+    display: block;
+    width: 170px;
+    height: 50px;
+    border: 2px solid #000;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+#movie a:hover{
+    color: #777;
+    border: 2px solid #777;
+    transition: 0.5s;
+}
+
+#week{
+    width: 1000px;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#week .week_h{
+    width: 170px;
+    height: 260px;
+    float: left;
+}
+#week .week_h h2{
+    font-size: 31px;
+    line-height: 31px;
+    padding: 15px 0;
+    margin-bottom: 25px;
+    border-top: 3px solid #222;
+    border-bottom: 3px solid #222;
+    color: #222;
+}
+#week .week_h h4{
+    margin: 10px 0;
+}
+#week .week_h a{
+    font-size: 16px;
+    font-weight: 900;
+    color: #222;
+}
+#week .week_h a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: 0.7s;
+}
+#week .week_h a:hover::after{
+    content: ' ＞'; 
+}
+#week .week_b{
+    width: 795px;
+    height: 260px;
+    float: right;
+}
+#week .week_b ul{
+    font-size: 0;
+}
+#week .week_b li{
+    display: inline-block;
+    width: 190px;
+    height: 260px;
+    margin-right: 11.6px;
+    box-sizing: border-box; /*중요*/
+    border: 1px solid #ccc;
+}
+#week .week_b li:last-child{
+    margin-right: 0;
+}
+
+#week .week_b li a{
+    display: block;
+    height: 260px;    
+}
+#week .week_b li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+#week .week_b img{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+#week .week_b p{
+    font-size: 14px;
+    margin: 12px 0 6px 8px;
+}
+#week .week_b span{
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+#banner{
+    width: 1000px;
+    height: 395px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+#banner .group{
+    float: left;
+}
+#banner .group a{
+    display: block;
+}
+#banner .group a:last-child{
+    margin-top: 13px;
+}
+#banner > a{
+    float: right;
+}
+/* footer */
+#footer{   
+    width: 100%;
+    height: 600px;
+}
+#footer #info{
+    width: 100%;
+    height: 162px;
+    background: url(../images/footer_top_bg.jpg) 50% 0;
+}
+#footer .info_top{
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+}
+#footer .info_top .top_left{
+    float: left;
+}
+#footer .info_top .top_right{
+    float: right;
+}
+#footer .info_bottom{
+    width: 1000px;
+    height: 52px;
+    margin: 0 auto;
+}
+#footer .info_bottom h3{
+    float: left;
+    font-size: 16px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 52px;
+}
+#footer .info_bottom span{
+    line-height: 52px;
+    color: #fff;
+}
+#footer .info_bottom .bottom_left{
+    float: left;
+}
+#footer .info_bottom .bottom_right{
+    float: right;
+    margin-right: 40px;
+}
+#footer #allmenu{
+    width: 1000px;
+    height: 295px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#footer #allmenu .all{
+    width: 750px;
+    height: 260px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+#footer #allmenu .all > li{
+    float: left;
+    margin-right: 80px;
+}
+#footer #allmenu .all > li:nth-child(3){
+    margin-right: 35px;
+}
+#footer #allmenu .all > li:last-child{
+    margin-right: 0px;
+}
+#footer #allmenu .all li .menu{}
+
+#footer #allmenu .menu li h4{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+#footer #allmenu .menu li a{
+    font-size: 15px;
+    line-height: 23px;
+}
+#footer #allmenu .menu li a:hover{
+    color: red;
+    transition: 0.3s;
+}
+#footer #allmenu .callcenter{
+    float: right;
+    width: 245px;
+    height: 260px;
+}
+#footer .callcenter h2{
+    font-size: 35px;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    font-family: '명조';
+    font-weight: 600;
+    padding-bottom: 8px;
+    margin-top: -5px;
+}
+#footer .callcenter p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+#footer .callcenter .bold{
+    font-weight: 900;
+}
